@@ -3,6 +3,7 @@ const btn = document.querySelector('#btn');
 const img = document.getElementById('img');
 
 btn.addEventListener('click', () => {
+    alert(nom + ';' + prenom);
    img.classList.toggle('show');
 })
 

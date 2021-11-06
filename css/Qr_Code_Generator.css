@@ -61,18 +61,19 @@ header {
     background-color: var(--color-warning);
     margin-bottom: 5rem;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 header h1 {
     color: var(--color-text-header);
     text-align: center;
+    
 }
 
 header img {
-    width: 15rem;
-    height: 15rem;
-    vertical-align: -8.5rem;
-    margin-bottom: .5rem;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: -1.5rem;
 }
 
 main{
@@ -83,7 +84,7 @@ main{
     border-radius: 1rem;
     background-color: var(--color-over);
 }
-
+/*
 main div img {
     display: block;
     width: 100%;
@@ -101,8 +102,9 @@ aside fieldset{
 aside fieldset legend{
     padding: 2rem 1rem;
 }
+*/
 
-aside input, aside label {
+/*aside*/ input, /*aside*/ label {
     display: block;
     width: 100%;
     line-height: 4.2rem;
@@ -110,22 +112,18 @@ aside input, aside label {
     
 }
 
-aside input[type="text"] {
+/*aside*/ input[type="text"] {
     border: solid .1rem #d0d394;
     border-radius: .4rem;
 }
 
-aside input[type="password"] {
-    border: solid .1rem #d0d394;
-    border-radius: .4rem;
-    outline: none;
-}
 
-aside input[type="text"]:focus, aside input[type="password"]:focus {
+
+/*aside*/ input[type="text"]:focus {
     outline: 0.1rem solid transparent;
     box-shadow: 0 0 1.0rem #db0ab8;
 }
-
+/*
 aside button[type="submit"], #part{
     display: inline-block;
     background-color: #120a1b;
@@ -186,7 +184,13 @@ aside fieldset form div span {
     color: #c0392b;
     text-decoration: none;
 }
+*/
 
+main div img {
+    width: 30rem;
+    height: 30rem;
+    margin: 5rem auto;
+}
 
 footer {
     max-width: 80rem;
@@ -197,6 +201,7 @@ footer {
     padding: 1rem;
     background-color: var(--color-over);
     text-align: center;
+    display: none;
 }
 
 /* Tablette */
@@ -215,16 +220,17 @@ footer {
     header h1 img {
         display: block;
         margin: 0 auto;
+    }    
+}
 
-    }
-    
+@media screen and (max-width: 20rem) {
+    main div img {
+        display: block;
+        width: 100%;
+    }   
 }
 
 
-@media screen and (min-width: 60rem) {
-    aside fieldset form div {
-        position: relative;   
-    }
-    
-}
+
+
 

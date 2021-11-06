@@ -134,7 +134,7 @@ aside button[type="submit"], #part{
     padding: 0 .4rem;
     border-radius: .4rem;
     cursor: pointer;
-    width: calc(100% / 2 - 0.3rem);
+    width: calc(100% / 2 - 1.3rem);
     margin-top: 3rem;
 }
 
@@ -153,6 +153,20 @@ main aside fieldset form p a {
     text-decoration: underline;
     color: green;
 }
+
+aside fieldset form div span {
+    position: absolute;
+    right: 3.5rem;
+    transform: translate(0, -170%);
+    cursor: pointer;
+}
+
+.fa {
+    font-size: 2rem;
+    color: #7a797e;
+}
+
+
 
 #lienpart {
     display: block;
@@ -205,4 +219,14 @@ footer {
     }
     
 }
+
+
+
+@media screen and (min-width: 60rem) {
+    aside fieldset form div {
+        position: relative;   
+    }
+    
+}
+
 
