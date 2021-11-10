@@ -61,20 +61,20 @@ header {
     background-color: var(--color-warning);
     margin-bottom: 5rem;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 header h1 {
     color: var(--color-text-header);
     text-align: center;
+    
 }
 
 header img {
-    width: 15rem;
-    height: 15rem;
-    vertical-align: -8.5rem;
-    margin-bottom: .5rem;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: -1.5rem;
 }
-
 main{
     max-width: 80rem;
     margin: 0 auto 2rem;
@@ -84,11 +84,6 @@ main{
     background-color: var(--color-over);
 }
 
-main div img {
-    display: block;
-    width: 100%;
-    border-radius: 1rem;
-}
 
 aside fieldset{ 
     padding-top: 2rem;
@@ -126,7 +121,7 @@ aside input[type="text"]:focus, aside input[type="password"]:focus {
     box-shadow: 0 0 1.0rem #db0ab8;
 }
 
-aside button[type="submit"], #part{
+aside button[type="button"], #part{
     display: inline-block;
     background-color: #120a1b;
     color: #fff;
@@ -138,7 +133,7 @@ aside button[type="submit"], #part{
     margin-top: 3rem;
 }
 
-aside button[type="submit"] {
+aside button[type="button"] {
     background-color: #04AA6D;
 }
 

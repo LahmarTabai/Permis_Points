@@ -84,27 +84,9 @@ main{
     border-radius: 1rem;
     background-color: var(--color-over);
 }
-/*
-main div img {
-    display: block;
-    width: 100%;
-    border-radius: 1rem;
-}
 
-aside fieldset{ 
-    padding-top: 2rem;
-    max-width: auto;
-    border: solid .1rem #ac6a35;
-    border-radius: .8rem;
 
-}
-
-aside fieldset legend{
-    padding: 2rem 1rem;
-}
-*/
-
-/*aside*/ input, /*aside*/ label {
+input, label {
     display: block;
     width: 100%;
     line-height: 4.2rem;
@@ -112,79 +94,17 @@ aside fieldset legend{
     
 }
 
-/*aside*/ input[type="text"] {
+input[type="text"] {
     border: solid .1rem #d0d394;
     border-radius: .4rem;
 }
 
 
 
-/*aside*/ input[type="text"]:focus {
+input[type="text"]:focus {
     outline: 0.1rem solid transparent;
     box-shadow: 0 0 1.0rem #db0ab8;
 }
-/*
-aside button[type="submit"], #part{
-    display: inline-block;
-    background-color: #120a1b;
-    color: #fff;
-    line-height: 4.5rem;
-    padding: 0 .4rem;
-    border-radius: .4rem;
-    cursor: pointer;
-    width: calc(100% / 2 - 1.3rem);
-    margin-top: 3rem;
-}
-
-aside button[type="submit"] {
-    background-color: #04AA6D;
-}
-
-main aside fieldset form p {
-    line-height: 4rem;
-    margin-top: 2rem;
-    font-style: italic;
-}
-
-main aside fieldset form p a {
-    font-weight: bolder;
-    text-decoration: underline;
-    color: green;
-}
-
-aside fieldset form div span {
-    position: absolute;
-    right: 3.5rem;
-    transform: translate(0, -170%);
-    cursor: pointer;
-}
-
-.fa {
-    font-size: 2rem;
-    color: #7a797e;
-}
-
-
-
-#lienpart {
-    display: block;
-    text-align: center;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.forget {
-    line-height: 2rem;
-    margin-top: 1rem;
-}
-
-.forget-pass {
-    color: #c0392b;
-    text-decoration: none;
-}
-*/
 
 main div img {
     width: 30rem;

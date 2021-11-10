@@ -61,18 +61,19 @@ header {
     background-color: var(--color-warning);
     margin-bottom: 5rem;
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 header h1 {
     color: var(--color-text-header);
     text-align: center;
+    
 }
 
 header img {
-    width: 15rem;
-    height: 15rem;
-    vertical-align: -8.5rem;
-    margin-bottom: .5rem;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: -1.5rem;
 }
 
 main{
@@ -82,12 +83,6 @@ main{
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--color-over);
-}
-
-main div img {
-    display: block;
-    width: 100%;
-    border-radius: 1rem;
 }
 
 aside fieldset{ 
