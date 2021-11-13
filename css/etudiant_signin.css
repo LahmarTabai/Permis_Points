@@ -120,7 +120,7 @@ aside input[type="text"]:focus, aside input[type="password"]:focus {
     box-shadow: 0 0 1.0rem #db0ab8;
 }
 
-aside button[type="submit"], #part{
+aside button[type="button"], #part{
     display: inline-block;
     background-color: #120a1b;
     color: #fff;
@@ -132,7 +132,7 @@ aside button[type="submit"], #part{
     margin-top: 3rem;
 }
 
-aside button[type="submit"] {
+aside button[type="button"] {
     background-color: #04AA6D;
 }
 

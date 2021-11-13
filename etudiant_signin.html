@@ -23,21 +23,21 @@
    <aside>
     <fieldset>
         <legend>Sign In</legend>
-        <form action="action_page.php" method="post"> <!--POST-->
+        <form id="myForm"  method="post"><!--POST-->
 
 
             <label for="uname"><i class="fa fa-user icon"> </i> Username</label>
-            <input type="text" id="uname" name="uname" placeholder="Enter Username" required><!--ce qu'on met pour for doit etre le mem aux id dans l'input-->
+            <input type="text" id="uname" name="username" placeholder="Enter Username" required><!--ce qu'on met pour for doit etre le mem aux id dans l'input-->
 
             <div class="passe" role="presentation" aria-labelledby="password-field">
                 <label for="password-field"><i class="fa fa-key icon"></i> Password</label>
                 <input type="password" id="password-field" name="password" placeholder="Enter Password" required>
-                <span><i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i></span>
+                <span><i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle();"></i></span>
             </div>
 
             <p id="part"><a id="lienpart" href="./index.html">Cancel</a></p>
 
-            <button type="submit" class="signinbtn">Sign In</button>
+            <button id="but" type="button" onclick="fullData();" class="signinbtn">Sign In</button>
 
             
             <p class="forget"><a class="forget-pass" href="./etudiant_Reset_password.html">Forgot password ?</a></p>
@@ -45,6 +45,10 @@
         </form>
     </fieldset>
    </aside>
+
+
+   <div id="result"></div>
+
 
 </main>
 

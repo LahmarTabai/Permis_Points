@@ -112,6 +112,15 @@ main div img {
     margin: 5rem auto;
 }
 
+main div img {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
 footer {
     max-width: 80rem;
     margin: 0 auto;

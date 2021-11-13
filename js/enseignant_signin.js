@@ -24,7 +24,11 @@ function fullData() {
     request.onreadystatechange = function() {
         console.log('state change', this);
         if(this.readyState === 4 && this.status === 200) {
-            document.getElementById('result').innerHTML = this.responseText;
+            var user = JSON.parse(this.response);
+            document.getElementById('result').innerHTML = user;
+
+            localStorage.setItem('user', user);
+            console.log(user);
         }else {
             document.getElementById('result').innerHTML = "Forbidden";
         }
@@ -33,3 +37,14 @@ function fullData() {
     var formData = new FormData(myForm);
     request.send(formData);
 };
+
+/************************************* */
+
+// Localstorage :
+
+// localStoragesetItem("clé", "value");
+// localStoragegetItem("clé");
+// localStorageclear();
+
+
+
