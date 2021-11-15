@@ -36,6 +36,7 @@ input {
     font-size: inherit;
     outline: transparent;
     transition: all 0.5rem ease-in-out;
+    all: unset;
 }
 button{
     border: 0;

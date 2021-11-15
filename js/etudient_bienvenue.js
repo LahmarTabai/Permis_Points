@@ -1,7 +1,12 @@
 // message de welcome :
 
-document.getElementById("ret").innerHTML = localStorage.getItem('user'); // .username
+var user = JSON.parse(window.localStorage.getItem('user'));
 
+
+
+document.getElementById("ret").innerHTML = user.firstname;  // .username
+
+// console.log(Object.values(local[1]));
 
 /********************** */
 
@@ -21,10 +26,14 @@ function generateQR() {
 
 };
 
+// affichage du QR Code :
+
+generateQR(); 
+
 /*********************** */
 
 // button pour afficher le QR Code :
-
+/*
 const btn = document.querySelector('#btn');
 
 const img = document.getElementById('qrcode');
@@ -34,7 +43,7 @@ btn.addEventListener('click', () => {
     img.classList.toggle('show');
    
 })
-
+*/
 
 
 

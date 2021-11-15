@@ -1,3 +1,4 @@
+// cacher et afficher mot de passe:
 let state = false;
 
 function toggle() {
@@ -24,19 +25,59 @@ function fullData() {
     request.open("POST", "https://itic-pap.rihan.fr/auth/login");
     request.onreadystatechange = function() {
         console.log('state change', this);
-        if(this.readyState === 4 && this.status === 200) {
-            var user = JSON.parse(this.response);
-            document.getElementById('result').innerHTML = user;
+        if(this.readyState === 4) {
 
-            localStorage.setItem('user', user);
+            if(this.status === 200) {
+           
+        
+            localStorage.setItem('user', this.response);
             //redirection pour une autre page html :: Bien vienvenue
             window.location.href = "./etudient_bienvenue.html";
             
         }else {
-            document.getElementById('result').innerHTML = "Forbidden";
+            alert("You are not allowed !");
+            document.location.reload();
         }
-    };
+    }
+}
     var myForm = document.getElementById('myForm');
     var formData = new FormData(myForm);
     request.send(formData);
+    
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
